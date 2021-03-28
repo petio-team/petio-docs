@@ -34,7 +34,7 @@
 
 * [FAQ](troubleshooting/troubleshooting-faq.md)
 
-## Staff & Testers Only <a id="staff-only"></a>
+## Staff & Testers Only
 
-* [Petio Pre-Release Workflow For Testers](staff-only/petio-pre-release-workflow-for-testers.md)
+* [Petio Pre-Release Workflow For Testers](staff-and-testers-only/petio-pre-release-workflow-for-testers.md)
 
