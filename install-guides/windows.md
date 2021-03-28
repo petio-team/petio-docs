@@ -1,0 +1,120 @@
+---
+description: >-
+  If you notice any mistakes that need to be corrected, please reach out on
+  Discord!
+---
+
+# Windows
+
+## Installation
+
+The recommended installation order is to choose which way you prefer to run Mongo, host it locally or remotely. Secondly, we recommend you install Petio as a service so it can start automatically everytime your system boots up. We recommend either [NSSM](windows.md#nssm) or [Shawl](windows.md#shawl).
+
+## Mongo
+
+Petio supports two ways of connecting to a Mongo Database instance, locally or remote. We recommend the locally hosted MongoDB option.
+
+### MongoDB Locally
+
+* Download MongoDB Community Server [here](https://www.mongodb.com/try/download/community). The latest version only support Windows 10 and Server 2019. If you are on older OS you need to download Community Server Edition v4.2.
+* Install MongoDB using default instructions on screen.
+* Download the latest version of Petio from [Petio Website](https://petio.tv/releases/latest).
+* Once this is complete you can navigate to `http://<ip or hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md). When you get to the MongoDB setup, instead of `mongo:27017` use `localhost:27017`.
+
+### MongoDB Remotely
+
+* Register for Atlas [here](https://www.mongodb.com/cloud/atlas/register).
+* Create a free cluster.
+
+![](../.gitbook/assets/remote_mongodb_cluster.jpg)
+
+* Change the provider or region if you need to. It may take some time to create the cluster.
+
+![](../.gitbook/assets/remote_mongodb_server_region.jpg)
+
+* After the cluster is made, click on connect and select MongoDB Compass and follow the instructions on screen.
+
+![](../.gitbook/assets/remote_mongodb_compass.jpg)
+
+* Download the latest version of [Petio](https://petio.tv/releases/latest).
+* Once you've completed theses steps, you can navigate to `http://<hostname>:7777` to start [configuring Petio](../configuration/first-time-setup.md). 
+  * When you get to the MongoDB setup, click on `mongo://` to switch it to `mongo+srv://` and copy the connection string from Atlas, without the `mongo+srv://` and `/test` and replace the `<password>` with your password. The syntax should be `user:password@cluster.mongodb.net`.
+
+{% hint style="info" %}
+**NOTE**: If your password contains any special characters you should encode it using [URLEncoder](https://www.urlencoder.org/).
+{% endhint %}
+
+## Petio as a Service
+
+First of all, download the Petio binaries from the [downloads page](https://petio.tv/downloads/) and extract the zip file to a convenient location. \(We recommend at the root of your `C:` drive, i.e: `C:\Petio`.\) Note that the folders from the zip file \(`config` and `views` at the time of this writing\) need to stay in the same folder as the binary itself.
+
+### NSSM
+
+* Download the latest release of [NSSM](https://nssm.cc/download).
+* Extract the zip folder anywhere you want on your system. We recommend the root of your `C:\` drive on a folder called `NSSM`.
+  * Add the `NSSM` folder to your Windows Path.
+    * Go to Control Panel &gt; System &gt; Advanced System Settings
+    * Click on `Environment Variables` at the bottom
+    * Under `System Variables` scroll down until you see `Path` and double click on it
+    * Click `New` and type `C:\NSSM`
+* To start the installion of Petio as a service type:
+
+```text
+nssm install petio
+```
+
+* In the `Application` window direct the path to where your `Petio.exe` is, and use the argument: `--port=7777`, then click install service.
+* To start the service use:
+
+```text
+nssm start petio
+```
+
+* To check if the service is up and running use:
+
+```text
+nssm status petio
+```
+
+* If you later wish to remove this service use:
+
+```text
+nssm remove petio
+```
+
+* Once this is complete you can navigate to `http://<ip or hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md).
+
+### Shawl
+
+* Grab the latest release of [Shawl](https://github.com/mtkennerly/shawl/releases).
+* Shawl is portable, so place it anywhere you want on your system; we recommend the root of your `C:\` drive in a folder called `Shawl`.
+* Open up an administrator command prompt and navigate to the directory where you placed Shawl. In our case:
+
+```text
+cd C:\Shawl
+```
+
+* Create a service for Petio with Shawl using the command:
+
+```text
+shawl.exe add --name Petio -- "C:\path\to\petio.exe"
+```
+
+* Then, start the Petio service like so \(if you used PowerShell, replace `sc` by `sc.exe`\):
+
+```text
+sc start Petio
+```
+
+* To stop Petio, use
+
+```text
+sc stop Petio
+```
+
+* Once this is complete you can navigate to `http://<ip or hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md) or by viewing the `.log` file that Shawl created for Petio in the same directory where you placed Shawl.
+
+### Reverse Proxy
+
+You have the ability to serve Petio behind a reverse proxy. This is inherently more secure as you are not having to punch holes through your router's firewall or your Windows' firewall for every service you want to access remotely. By serving services behind a reverse proxy you are filtering all the traffic to ports 80/443. We recommend you read over our reverse proxy section. We have some helpful examples and there is even one [specific to Windows](../reverse-proxy/caddy.md).
+
