@@ -30,6 +30,14 @@ Once you select your server, you need to configure how Petio will connect to you
 
 ![](../.gitbook/assets/setup_screen_4.png)
 
+{% hint style="info" %}
+If you are using the MongoDB Remotely option click on `mongo://` to switch it to `mongo+srv://` and copy the connection string from Atlas, without the `mongo+srv://` and `/test`. 
+
+Replace the `<password>` with your password. The syntax should be user:password@cluster.mongodb.net.
+
+If your password contains any special characters you should encode it using [URLEncoder](https://www.urlencoder.org/).
+{% endhint %}
+
 ## Step 5
 
 If you configured everything correctly, the last screen should look like this.

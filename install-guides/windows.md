@@ -18,8 +18,10 @@ Petio supports two ways of connecting to a Mongo Database instance, locally or r
 
 * Download MongoDB Community Server [here](https://www.mongodb.com/try/download/community). The latest version only support Windows 10 and Server 2019. If you are on older OS you need to download Community Server Edition v4.2.
 * Install MongoDB using default instructions on screen.
-* Download the latest version of Petio from [Petio Website](https://petio.tv/releases/latest).
-* Once this is complete you can navigate to `http://<ip or hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md). When you get to the MongoDB setup, instead of `mongo:27017` use `localhost:27017`.
+* Download the latest version of [Petio](https://petio.tv/releases/latest) and decide which installation method you prefer
+  * [NSSM](windows.md#nssm)
+  * [Shawl](windows.md#shawl)
+* Once this is complete you can navigate to `http://hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md). When you get to the MongoDB setup, instead of `mongo:27017` use `localhost:27017`.
 
 ### MongoDB Remotely
 
@@ -36,13 +38,9 @@ Petio supports two ways of connecting to a Mongo Database instance, locally or r
 
 ![](../.gitbook/assets/remote_mongodb_compass.jpg)
 
-* Download the latest version of [Petio](https://petio.tv/releases/latest).
-* Once you've completed theses steps, you can navigate to `http://<hostname>:7777` to start [configuring Petio](../configuration/first-time-setup.md). 
-  * When you get to the MongoDB setup, click on `mongo://` to switch it to `mongo+srv://` and copy the connection string from Atlas, without the `mongo+srv://` and `/test` and replace the `<password>` with your password. The syntax should be `user:password@cluster.mongodb.net`.
-
-{% hint style="info" %}
-**NOTE**: If your password contains any special characters you should encode it using [URLEncoder](https://www.urlencoder.org/).
-{% endhint %}
+* Download the latest version of [Petio](https://petio.tv/releases/latest) and decide which installation method you prefer
+  * [NSSM](windows.md#nssm)
+  * [Shawl](windows.md#shawl)
 
 ## Petio as a Service
 
@@ -82,7 +80,7 @@ nssm status petio
 nssm remove petio
 ```
 
-* Once this is complete you can navigate to `http://<ip or hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md).
+* Once this is complete you can navigate to `http://<hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md).
 
 ### Shawl
 
@@ -112,7 +110,7 @@ sc start Petio
 sc stop Petio
 ```
 
-* Once this is complete you can navigate to `http://<ip or hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md) or by viewing the `.log` file that Shawl created for Petio in the same directory where you placed Shawl.
+* Once this is complete you can navigate to `http://<hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md) or by viewing the `.log` file that Shawl created for Petio in the same directory where you placed Shawl.
 
 ### Reverse Proxy
 

@@ -68,9 +68,24 @@ sudo systemctl status mongod
 sudo systemctl enable mongod
 ```
 
+### 
+
 ### MongoDB Remotely
 
-We are looking for contributors!
+* Register for Atlas [here](https://www.mongodb.com/cloud/atlas/register).
+* Create a free cluster.
+
+![](../../.gitbook/assets/remote_mongodb_cluster.jpg)
+
+* Change the provider or region if you need to. It may take some time to create the cluster.
+
+![](../../.gitbook/assets/remote_mongodb_server_region.jpg)
+
+* After the cluster is made, click on connect and select MongoDB Compass and follow the instructions on screen.
+
+![](../../.gitbook/assets/remote_mongodb_compass.jpg)
+
+* Move on to the next section to start [installing Petio](debian-ubuntu.md#installing-petio).
 
 ## Installing Petio
 
