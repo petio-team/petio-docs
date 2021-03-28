@@ -1,7 +1,7 @@
 ---
 description: >-
   If you notice any mistakes that need to be corrected, please reach out on
-  [Discord](https://discord.gg/bseGmrUd3N)!
+  Discord!
 ---
 
 # Traefik \(v2\)
