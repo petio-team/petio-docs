@@ -20,3 +20,17 @@ Below you can find an example of how a kid's filter would work versus an adult o
 
 ![](../.gitbook/assets/filter_adults.png)
 
+Automatic send anime to sonarr's anime "Series Type".
+
+![](../.gitbook/assets/anime-filter.png)
+
+Language filter:
+
+* Setup a language profile in sonarr.
+
+![](../.gitbook/assets/sonarr-language-profile.png)
+
+* Add the language filter in Petio.
+
+![](../.gitbook/assets/language-filter.png)
+
