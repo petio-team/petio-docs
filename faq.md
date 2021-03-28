@@ -47,4 +47,3 @@ Lidarr support is planned
 ### Backups
 
 Backup options are planned including database backup
-
