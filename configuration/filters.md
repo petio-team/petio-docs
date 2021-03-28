@@ -14,17 +14,17 @@ Filters can be used with age ratings, genre, language, and keywords! We hope to 
 
 For those of you using `AND`/`OR` operands for the first time I'll provide a quick explanation of each. Any one of the `OR` conditions can trigger a match whereas an `AND` operator must always be true for the entire filter to match. Most of the time, you want to use `OR` instead of `AND` otherwise, you'll stare at your screen wondering why it isn't working. If you have questions how to configure filters, please stop by our [Discord](https://discord.gg/bseGmrUd3N) and ask some questions!
 
-Below you can find an example of how a kid's filter would work versus an adult one:
+### Age Ratings Filter Example
 
 ![](../.gitbook/assets/filter_kids.png)
 
 ![](../.gitbook/assets/filter_adults.png)
 
-Automatic send anime to sonarr's anime "Series Type".
+### Anime Filter Example
 
 ![](../.gitbook/assets/anime-filter.png)
 
-Language filter:
+### Sonarr Language Filter Example
 
 * Setup a language profile in sonarr.
 
