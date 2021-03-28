@@ -48,3 +48,7 @@ Lidarr support is planned
 
 Backup options are planned including database backup
 
+## Does Petio automatically update?
+
+Currently only docker based installs can "auto-update" by pulling a new image. If you are running Petio using binaries you must download the latest release.
+
