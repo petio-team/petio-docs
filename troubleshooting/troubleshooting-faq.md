@@ -2,9 +2,9 @@
 
 ![](../.gitbook/assets/troubleshooting.gif)
 
-## Petio Crashes On Container Startup
+## Docker
 
-### Docker
+### Petio Crashes On Container Startup
 
 Error example:
 
@@ -29,8 +29,5 @@ petio exited with code 1
 * Normally this is caused by the container trying to resolve an IPv6 address for `api.temoviedb.org`. To verify if this is the issue:
   * `docker exec  -it petio sh`
     * `nslookup api.themoviedb.org`
-
-#### FIX:
-
-* Go back to when you first configured Docker and remember if you made some custom changes. This is **not** a Petio issue but rather an issue on your configuration.
+* To fix this issue, go back to when you first configured Docker and remember if you made some custom changes. This is not a Petio issue but rather an issue on your configuration.
 
