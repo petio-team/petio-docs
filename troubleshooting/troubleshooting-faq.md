@@ -25,3 +25,11 @@ petio exited with code 1
     * `nslookup api.themoviedb.org`
 * To fix this issue, go back to when you first configured Docker and remember if you made some custom changes. This is not a Petio issue but rather an issue on your configuration.
 
+## Linux
+
+## MacOS
+
+## unRAID
+
+## Windows
+
