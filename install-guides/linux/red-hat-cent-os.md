@@ -88,12 +88,6 @@ sudo useradd -M --shell=/bin/false petio
 sudo mkdir /opt/Petio
 ```
 
-* Change ownership of the directory for Petio:
-
-```bash
-sudo chown petio /opt/Petio
-```
-
 * Download the latest version of Petio:
 
 ```bash
@@ -104,6 +98,12 @@ sudo wget https://petio.tv/releases/latest -O petio-latest.zip
 
 ```bash
 sudo unzip petio-latest.zip -d /opt/Petio
+```
+
+* Change ownership of the directory for Petio:
+
+```bash
+sudo chown -R petio:petio /opt/Petio
 ```
 
 * Create the petio service with systemd:
@@ -130,7 +130,7 @@ WantedBy=multi-user.target
 * Reload systemd:
 
 ```bash
-sudo systemd daemon-reload
+sudo systemctl daemon-reload
 ```
 
 * Start Petio:
