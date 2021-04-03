@@ -21,7 +21,7 @@ docker run --rm \
     -e TZ="Etc/UTC" \
     --user 1000:1000 \
     -v /<host_folder_config>:/app/api/config \
-    petio-team/petio
+    ghcr.io/petio-team/petio
 ```
 
 ```text
