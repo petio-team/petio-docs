@@ -55,8 +55,6 @@ sudo systemctl status mongod
 sudo systemctl enable mongod
 ```
 
-### \*\*\*\*
-
 ### MongoDB Remotely
 
 * Register for Atlas [here](https://www.mongodb.com/cloud/atlas/register).

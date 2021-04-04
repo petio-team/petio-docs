@@ -10,14 +10,14 @@ description: >-
 
 Petio supports two ways of connecting to a Mongo Database instance, locally or remote. We recommend the locally hosted MongoDB option.
 
-{% hint style="info" %}
-**NOTE:** Macs with the new M1 chip \(arm64 arch\) do not yet support Mongo locally installed. Please use either Remote MongoDB Hosting or any of the [Docker ](docker.md)options.
+{% hint style="warning" %}
+Macs with the new M1 chip \(arm64 arch\) do not yet support Mongo locally installed. Please use either Remote MongoDB Hosting or any of the [Docker ](docker.md)options.
 {% endhint %}
 
 ### MongoDB Locally
 
 {% hint style="info" %}
-**NOTE:** We assume you've installed [homebrew](https://brew.sh/#install) in order to follow this guide.
+We assume you've installed [homebrew](https://brew.sh/#install) in order to follow this guide.
 {% endhint %}
 
 * Add the Official MongoDB Repo to homebrew:

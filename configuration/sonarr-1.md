@@ -8,12 +8,12 @@ description: >-
 
 You can add multiple Sonarr servers to your Petio instance. This will show you how to connect an existing Sonarr server to Petio.
 
-{% hint style="info" %}
-**NOTE:** We support all Sonnar versions for now. V2 support will be dropped soon
+{% hint style="warning" %}
+We support all Sonnar versions for now. V2 support will be dropped soon
 {% endhint %}
 
 {% hint style="info" %}
-**NOTE:** In the screenshots below we assume you are using locally accessible docker containers that are on the same docker network as Petio.
+In the screenshots below we assume you are using locally accessible docker containers that are on the same docker network as Petio.
 {% endhint %}
 
 \*\*\*\*

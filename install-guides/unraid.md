@@ -10,16 +10,21 @@ description: >-
 
 ### Community Applications
 
-* Go to the Apps page within unRAID and search for `MongoDB`. You will have to set permissions on the appdata folder yourself. The MongoDB container 
-does not have any logic in it to set the ownership. There are two ways to do the permissions for this.
+* Go to the Apps page within unRAID and search for `MongoDB`. 
 
-1. In Extra Parameters (you will have to enable the advanced view), set `--user 99:100` to run it as the user most containers created by the community run as.
-    If you choose this - in your terminal run  `chown nobody:users /mnt/user/appdata/mongodb/`
-3. If you choose not to set the Extra Perameters - in your terminal run `chown 999:999 /mnt/user/appdata/mongodb/`
+{% hint style="danger" %}
+You will have to set permissions on the appdata folder yourself. The MongoDB container does not have any logic in it to set the ownership. 
+{% endhint %}
 
-Note: if you are using a different path, make sure you adjust the command as necesary
+* There are two ways to do the permissions for this.
+  * In Extra Parameters \(you will have to enable the advanced view\), set `--user 99:100` to run it as the user most containers created by the community run as. If you choose this - in your terminal run `chown nobody:users /mnt/user/appdata/mongodb/`
+  * If you choose not to set the Extra Perameters - in your terminal run `chown 999:999 /mnt/user/appdata/mongodb/`
 
-Restart the container after running the `chown`
+{% hint style="warning" %}
+If you are using a different path, make sure you adjust the command as necesary.
+{% endhint %}
+
+* Make sure to restart the container after running the `chown` command
 
 ## Petio
 
@@ -51,3 +56,4 @@ Once you've completed theses steps, you can navigate to `http://<hostname>:7777`
 * Configure the container like all the others on unRAID.
 
 ![](../.gitbook/assets/unraid_container_settings.png)
+

@@ -12,7 +12,7 @@ Petio supports two ways of connecting to a Mongo Database instance, locally or r
 
 ### **MongoDB Locally**
 
-{% hint style="info" %}
+{% hint style="danger" %}
 Make sure to add the correct repository to `apt` depending on whether you're using Debian or Ubuntu.
 {% endhint %}
 
@@ -67,8 +67,6 @@ sudo systemctl status mongod
 ```bash
 sudo systemctl enable mongod
 ```
-
-### 
 
 ### MongoDB Remotely
 

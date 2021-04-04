@@ -8,12 +8,12 @@ description: >-
 
 You can add multiple Radarr servers to your Petio instance. This will show you how to connect an existing Radarr server to Petio.
 
-{% hint style="info" %}
-**NOTE:** We only support Radarr V3.
+{% hint style="warning" %}
+We only support Radarr V3.
 {% endhint %}
 
 {% hint style="info" %}
-**NOTE:** In the screenshots below we assume you are using locally accessible docker containers that are on the same docker network as Petio.
+In the screenshots below we assume you are using locally accessible docker containers that are on the same docker network as Petio.
 {% endhint %}
 
 ## Step 1

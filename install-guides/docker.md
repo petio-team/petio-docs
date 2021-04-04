@@ -6,13 +6,13 @@ description: >-
 
 # Docker
 
-We will go over how to install Petio using [Docker](https://docs.docker.com/engine/) or [Docker Compose](https://docs.docker.com/compose/). We assume you have installed Docker and/or Docker Compose. 
+We will go over how to install Petio using [Docker](https://docs.docker.com/engine/) or [Docker Compose](https://docs.docker.com/compose/). We assume you have installed Docker and/or Docker Compose.
 
-{% hint style="info" %}
-**NOTE:** This guide will not walk you through how to install or configure any of these two services.
+{% hint style="danger" %}
+This guide will not walk you through how to install or configure any of these two services.
 {% endhint %}
 
-### Docker CLI
+## Docker CLI
 
 ```text
 docker run --rm \
@@ -34,7 +34,7 @@ docker run --rm \
     mongo
 ```
 
-### Docker Compose
+## Docker Compose
 
 There are two ways you can install Petio using Docker Compose. You can either download the `docker-compose.yml` from the repo and place it in a folder where you will run `docker-compose` from or you can add it to an existing `docker-compose.yml`.
 
@@ -84,7 +84,7 @@ services:
             - ./db:/data/db
 ```
 
-Once you configure the services, you need to spin up the container using `docker-compose up -d`. 
+Once you configure the services, you need to spin up the container using `docker-compose up -d`.
 
 Once the container is spun up, you can navigate to `http://<hostname>:7777` to start [configuring Petio](../configuration/first-time-setup.md).
 

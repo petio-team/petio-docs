@@ -26,7 +26,7 @@ This is the username you use to log in. Most of the time is your actual email or
 
 I think I don't really have to do write what a password is, do I? However, this is the password you use to log in to the email account. Not your Plex password, not your Petio password and not the password to your bank. I really hope you aren't using the same password across those 3 services...
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **NOTE:** If you are using Gmail make sure [to read ](https://support.google.com/accounts/answer/185833)what to do if you use 2FA on your account.
 {% endhint %}
 
@@ -46,7 +46,7 @@ The port is again dependent on your provider. Below you can find a table for the
 | MailGun |  |  |  |
 
 {% hint style="info" %}
-**NOTE:** Depending on what port you pick you might need to **not** check the box that says "Use Secure"
+Depending on what port you pick you might need to be sure **to not check** the box that says "Use Secure"
 {% endhint %}
 
 ### Base Path
@@ -64,7 +64,7 @@ However, for the user panel you can specify `Standard Login` or `Fast Login`. Th
 #### Discord
 
 {% hint style="info" %}
-**NOTE:** We assume you either have your own Discord or are in one where you have adminitrator permissions to perform these steps
+We assume you either have your own Discord or are in one where you have adminitrator permissions to perform these steps
 {% endhint %}
 
 * Create a new channel or use an existing one.
@@ -78,8 +78,8 @@ However, for the user panel you can specify `Standard Login` or `Fast Login`. Th
 
 ### Popular Content On Plex
 
-{% hint style="info" %}
-**NOTE:** This feature **requires** Plex Pass 
+{% hint style="danger" %}
+This feature **requires** Plex Pass 
 {% endhint %}
 
 Adds the most popular Movies and TV Shows on Plex in the last 30 days based on user plays. It shows up when you click on the Movies/TV section
