@@ -43,7 +43,7 @@ The port is again dependent on your provider. Below you can find a table for the
 | Gmail | smtp.gmail.com | 587 | 465 |
 | GSuite/Google Workspace | smtp-relay.gmail.com | 587 | N/A |
 | SendGrid | smtp.sendgrid.net | 587 | 465 |
-| MailGun |  |  |  |
+| MailGun | smtp.mailgun.org | 587 | N/A |
 
 {% hint style="info" %}
 Depending on what port you pick you might need to be sure **to not check** the box that says "Use Secure"

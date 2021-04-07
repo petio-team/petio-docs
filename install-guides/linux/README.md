@@ -2,7 +2,7 @@
 
 We provide install guides for some of the most popular Linux distros.
 
-* [Debian/Ubunut](debian-ubuntu.md)
+* [Debian/Ubuntu](debian-ubuntu.md)
 * [Red Hat/Cent OS](red-hat-cent-os.md)
 
 {% hint style="info" %}

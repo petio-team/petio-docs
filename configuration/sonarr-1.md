@@ -9,7 +9,7 @@ description: >-
 You can add multiple Sonarr servers to your Petio instance. This will show you how to connect an existing Sonarr server to Petio.
 
 {% hint style="warning" %}
-We support all Sonnar versions for now. V2 support will be dropped soon
+We support all Sonarr versions for now. V2 support will be dropped soon
 {% endhint %}
 
 {% hint style="info" %}
