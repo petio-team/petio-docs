@@ -29,7 +29,6 @@ docker run --rm \
     --name mongo \
     -e TZ="Etc/UTC" \
     --user 1000:1000 \
-    -p 27017:27017 \
     -v /<host_folder_db>:/data/db \
     mongo
 ```
@@ -75,8 +74,6 @@ services:
         image: mongo:latest
         container_name: 'mongo'
         hostname: mongo
-        ports:
-            - '27017:27017'
         networks:
             - petio-network
         user: '1000:1000'
