@@ -28,7 +28,11 @@ Click on `Add New`
 
 After clicking `Add New` you need to specify all your Sonarr settings and give it a friendly name you can recognize. Your `host` and `port` fields will vary depending on what installation method you chose.
 
-If you are hosting Sonarr behind a reverse proxy and have configured a base URL, you need to specify it on the `URL Base` field. If this all sounds like alien speak, you don't have to write anything there. Make sure the base URL has a preceding slash like `/sonarr`.
+If you are hosting Sonarr behind a reverse proxy and have configured a base URL, you need to specify it on the `URL Base` field. If this all sounds like alien speak, you don't have to write anything there.
+
+{% hint style="danger" %}
+Make sure that the URL Base field has a preceding slash like `/sonarr`
+{% endhint %}
 
 You can obtain your Sonarr API key by going to your Sonarr instance and clicking on `Settings > General`.
 

@@ -26,9 +26,13 @@ Click on `Add New`
 
 After clicking `Add New` you need to specify all your Radarr settings and give it a friendly name you can recognize. Your `host` and `port` fields will vary depending on what installation method you chose.
 
-If you are hosting Radarr behind a reverse proxy and have configured a base URL, you need to specify it on the `URL Base` field. If this all sounds like alien speak, you don't have to write anything there. Make sure the base URL has a preceding slash like `/radarr`.
+If you are hosting Radarr behind a reverse proxy and have configured a base URL, you need to specify it on the `URL Base` field. If this all sounds like alien speak, you don't have to write anything there. 
 
-You can obtain your Radarr API key by going to your Radarr instance and clicking on `Settings > General`.
+{% hint style="danger" %}
+Make sure that the URL Base field has a preceding slash like `/radarr`
+{% endhint %}
+
+You can obtain your **R**adarr API key by going to your Radarr instance and clicking on `Settings > General`.
 
 ![](../.gitbook/assets/radarr_setup_2.png)
 
