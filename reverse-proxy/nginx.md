@@ -6,7 +6,7 @@ description: >-
 
 # NGINX
 
-## Nginx Subdomain example
+## NGINX Subdomain example
 
 ```text
 server {
@@ -68,7 +68,7 @@ server {
 }
 ```
 
-## Nginx Subdirectory Example
+## NGINX Subdirectory Example
 
 Make sure you've set a [base path](../configuration/general-settings.md#base-path).
 
@@ -92,7 +92,7 @@ location ^~ /petio {
 }
 ```
 
-## Nginx Proxy Manager
+## NGINX Proxy Manager
 
 Expose web services on your network · Free SSL with Let's Encrypt · Designed with security in mind · Perfect for home networks
 

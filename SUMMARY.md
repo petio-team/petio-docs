@@ -26,6 +26,7 @@
 
 ## Reverse Proxy
 
+* [Reverse Proxy Basics](reverse-proxy/reverse-proxy-basics.md)
 * [Caddy](reverse-proxy/caddy.md)
 * [NGINX](reverse-proxy/nginx.md)
 * [Traefik \(v2\)](reverse-proxy/traefik.md)
