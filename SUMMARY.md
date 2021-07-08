@@ -23,6 +23,7 @@
 * [Console](configuration/console.md)
 * [User Profiles](configuration/user-profiles.md)
 * [Filters](configuration/filters.md)
+* [Notifications](configuration/notifications.md)
 
 ## Reverse Proxy
 
