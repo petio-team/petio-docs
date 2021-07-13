@@ -22,8 +22,7 @@ description: >-
 example.ddns.net {
     encode gzip
         log {
-            output file C:\Caddy\logs\petio.log
-            {
+            output file C:\Caddy\logs\petio.log {
             roll true               # Rotate logs, enabled by default
             roll_size_mb 5          # Set max size 5 MB
             roll_gzip true          # Whether to compress rolled files
