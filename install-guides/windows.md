@@ -116,7 +116,7 @@ sc stop Petio
 
 You have the ability to serve Petio behind a reverse proxy. This is inherently more secure as you are not having to punch holes through your router's firewall or your Windows' firewall for every service you want to access remotely. By serving services behind a reverse proxy you are filtering all the traffic to ports 80/443. We recommend you read over our reverse proxy section. We have some helpful examples and there is even one [specific to Windows](../reverse-proxy/caddy.md).
 
-### Update Petio
+## Updating Petio
 
 * Download latest binaries from [here](https://petio.tv/releases/latest/).
 * Stop Petio or the Petio service.

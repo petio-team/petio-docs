@@ -123,3 +123,20 @@ launchctl stop tv.petio
 
 Once you've completed theses steps, you can navigate to `http://<hostname>:7777` to start [configuring Petio](../configuration/first-time-setup.md).
 
+## Updating Petio
+
+* Stop the Petio service with `launchctl`.
+* Navigate to the directory you have Petio installed in, then, download the latest version from the [Downloads page](https://petio.tv/downloads/) with:
+
+```bash
+curl -L https://petio.tv/releases/latest --output petio-latest.zip
+```
+
+* Extract the contents of freshly downloaded archive while overwriting the current contents of the current directory with:
+
+```bash
+unzip -o petio-latest.zip -d ./
+```
+
+* Lastly, start the Petio service back up again with `launchctl`.
+
