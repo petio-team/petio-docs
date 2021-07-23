@@ -30,7 +30,7 @@ docker run --rm \
     -e TZ="Etc/UTC" \
     --user 1000:1000 \
     -v /<host_folder_db>:/data/db \
-    mongo
+    mongo:4.4
 ```
 
 ## Docker Compose
@@ -55,7 +55,7 @@ networks:
 services:
     petio:
         image: ghcr.io/petio-team/petio:latest
-        container_name: 'petio'
+        container_name: petio
         hostname: petio
         ports:
             - '7777:7777'
@@ -71,8 +71,8 @@ services:
             - ./logs:/app/logs
 
     mongo:
-        image: mongo:latest
-        container_name: 'mongo'
+        image: mongo:4.4
+        container_name: mongo
         hostname: mongo
         networks:
             - petio-network
