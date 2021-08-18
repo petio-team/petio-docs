@@ -61,7 +61,7 @@ First of all, download the Petio binaries from the [downloads page](https://peti
 nssm install petio
 ```
 
-* In the `Application` window direct the path to where your `Petio.exe` is, and use the argument: `--port=7777`, then click install service.
+* In the `Application` tab make sure  to specify the path to`Petio.exe` and then click install service.
 * To start the service use:
 
 ```text
