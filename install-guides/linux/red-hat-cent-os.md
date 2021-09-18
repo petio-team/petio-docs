@@ -55,6 +55,40 @@ sudo systemctl status mongod
 sudo systemctl enable mongod
 ```
 
+### MongoDB Locally - On A Different Host
+
+By default, MongoDB doesn’t allow remote connections.
+
+* Locate your `mongod.conf` and edit it with your favorite editor. Include any local IP addresses you want to allow to connect to your MongoDB instance.
+
+```bash
+vim /etc/mongod.conf
+# /etc/mongod.conf
+# Listen to local and LAN interfaces.
+bind_ip = 127.0.0.1,192.168.161.100
+```
+
+* Restart the `mongod` service after making these changes
+
+```bash
+sudo systemctl restart mongod
+```
+
+If there is a firewall, you might need to use `iptables` to allow access to MongoDB. Example below:
+
+* Any connections can connect to MongoDB on port 27017
+
+```bash
+iptables -A INPUT -p tcp --dport 27017 -j ACCEPT
+```
+
+* Only certain IPs can connect to MongoDB on port 27017
+
+```bash
+iptables -A INPUT -s <ip-address> -p tcp --destination-port 27017 -m state --state NEW,ESTABLISHED -j ACCEPT
+iptables -A OUTPUT -d <ip-address> -p tcp --source-port 27017 -m state --state ESTABLISHED -j ACCEPT
+```
+
 ### MongoDB Remotely
 
 * Register for Atlas [here](https://www.mongodb.com/cloud/atlas/register).

@@ -26,6 +26,10 @@ If you are using a different path, make sure you adjust the command as necesary.
 
 * Make sure to restart the container after running the `chown` command
 
+### MongoDB Locally - On A Different Host
+
+* Please review the [Linux guides](linux/debian-ubuntu.md#mongodb-locally-on-a-different-host) and make changes as necessary for your situation.
+
 ## Petio
 
 There are two ways to get Petio installed on unRAID. You can either import your own template or install it from the Community Applications plugin.

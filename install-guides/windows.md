@@ -23,6 +23,10 @@ Petio supports two ways of connecting to a Mongo Database instance, locally or r
   * [Shawl](windows.md#shawl)
 * Once this is complete, you can navigate to `http://hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md). When you get to the MongoDB setup, instead of `mongo:27017` use `localhost:27017`.
 
+### MongoDB Locally - On A Different Host
+
+* Please review the [Linux guides](linux/debian-ubuntu.md#mongodb-locally-on-a-different-host) and make changes as necessary for your situation.
+
 ### MongoDB Remotely
 
 * Register for Atlas [here](https://www.mongodb.com/cloud/atlas/register).

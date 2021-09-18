@@ -38,7 +38,9 @@ brew install mongodb-community@4.4
 brew services start mongodb-community
 ```
 
-### 
+### MongoDB Locally - On A Different Host
+
+* Please review the [Linux guides](linux/debian-ubuntu.md#mongodb-locally-on-a-different-host) and make changes as necessary for your situation.
 
 ### MongoDB Remotely
 
