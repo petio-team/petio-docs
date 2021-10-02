@@ -79,6 +79,12 @@ sudo curl -L https://petio.tv/releases/latest --output petio-latest.zip
 sudo unzip petio-latest.zip -d /opt/Petio
 ```
 
+* Change the permissions so that Petio can work as expected:
+
+```bash
+sudo chown -R ${USER}:staff /opt/Petio
+```
+
 * To have Petio running in the background without user input, we will use `launchctl.`
   * To more-or-less control `launchd`define a service for Petio like shown below and save it as `tv.petio.plist` in the `~/Library/LaunchAgents/` folder.
 
