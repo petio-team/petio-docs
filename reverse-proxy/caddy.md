@@ -18,7 +18,7 @@ description: >-
 * Create a new text file, rename it to `Caddyfile` and make sure it doesn't have an extension.
 * In the `Caddyfile` paste:
 
-```text
+```
 example.ddns.net {
     encode gzip
         log {
@@ -39,24 +39,30 @@ example.ddns.net {
 
 ### Start Caddy
 
-* You have two ways to run Caddy.
+{% hint style="info" %}
+You will need the bat file for both manuall and service.
+{% endhint %}
 
-  * You can do it manually by creating a bat file:
+*   You have two ways to run Caddy.
 
-  ```text
-  cd C:\Caddy
-  Caddy run'
-  ```
+    * You can do it manually by creating a bat file:
 
-  * You can run it as a service. Just follow the [NSSM](../install-guides/windows.md#nssm) or [Shawl](../install-guides/windows.md#shawl) guides.
+    ```
+    cd C:\Caddy
+    Caddy run'
+    ```
+
+    * You can run it as a service. Just follow the [NSSM](../install-guides/windows.md#nssm) or [Shawl](../install-guides/windows.md#shawl) guides.
 
 ### Port Forwarding
 
-* Open port `80` and `443`.  If you don't know how to port forward you should check out [Portforward.com](https://portforward.com/router/) and find your router.
+* Open port `80` and `443`. \
+  If you don't know how to port forward you should check out [Portforward.com](https://portforward.com/router/) and find your router.
 
 ### Firewall
 
-* Open port `80` and `443` in your firewall. To open Windows Firewall, go to the Start menu, select Run, type `WF.msc` and then select OK.
+* Open port `80` and `443` in your firewall.\
+  To open Windows Firewall, go to the Start menu, select Run, type `WF.msc` and then select OK.
 * Now click on Inbound Rules, then on the right side you want to click new rule.
 * Select Port click next.
 * Select TCP and type inn `80, 443` then next.
@@ -64,7 +70,7 @@ example.ddns.net {
 
 ### DNS
 
-* Now you need to get DNS redirect set up.  Some examples of services you can use are [noip](https://www.noip.com/) or [DuckDNS](https://www.duckdns.org/). Just make sure you set the record type as “DNS Host \(A\)”.
+* Now you need to get DNS redirect set up. \
+  Some examples of services you can use are [noip](https://www.noip.com) or [DuckDNS](https://www.duckdns.org). Just make sure you set the record type as “DNS Host (A)”.
 
-## 
-
+##
