@@ -9,6 +9,7 @@
 * [Linux](install-guides/linux/README.md)
   * [Debian 10/Ubuntu 20.04](install-guides/linux/debian-ubuntu.md)
   * [Red Hat/Cent OS](install-guides/linux/red-hat-cent-os.md)
+  * [FreeBSD](install-guides/linux/freebsd.md)
   * [Updating Petio](install-guides/linux/updating-petio.md)
 * [MacOS](install-guides/macos.md)
 * [UnRAID](install-guides/unraid.md)
@@ -30,7 +31,7 @@
 * [Reverse Proxy Basics](reverse-proxy/reverse-proxy-basics.md)
 * [Caddy](reverse-proxy/caddy.md)
 * [NGINX](reverse-proxy/nginx.md)
-* [Traefik \(v2\)](reverse-proxy/traefik.md)
+* [Traefik (v2)](reverse-proxy/traefik.md)
 
 ## Troubleshooting
 
@@ -39,4 +40,3 @@
 ## Staff & Testers Only
 
 * [Petio Pre-Release Workflow For Testers](staff-and-testers-only/petio-pre-release-workflow-for-testers.md)
-
