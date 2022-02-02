@@ -15,6 +15,7 @@ There is no package built for FreeBSD so the application will have to be built f
 pkg install mongodb
 pkg install npm
 pkg install git (only if you want to use git to checkout the source)
+npm install -g typescript
 
 ## Clone the repo and build the application
 mkdir -p /usr/local/share/petio
@@ -106,4 +107,4 @@ petio_precmd()
 run_rc_command "$1"
 ```
 
-Once you've completed these steps, you can navigate to `http://<hostname>:7777` to start [configuring Petio](../../configuration/first-time-setup.md).&#x20;
+Once you've completed these steps, you can navigate to `http://<hostname>:7777` to start [configuring Petio](../configuration/first-time-setup.md).&#x20;
