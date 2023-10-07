@@ -16,12 +16,12 @@ Petio supports two ways of connecting to a Mongo Database instance, locally or r
 
 ### MongoDB Locally
 
-* Download MongoDB Community Server [here](https://www.mongodb.com/try/download/community) \(make sure to choose version 4.4.7\). That version only support Windows 10 and Server 2019. If you are on older OS, you need to download Community Server Edition v4.2.
+* Download MongoDB Community Server [here](https://www.mongodb.com/try/download/community) \(make sure to choose the latest version of 4.4.x\). That version only support Windows 10 and Server 2019. If you are on older OS, you need to download Community Server Edition v4.2.
 * Install MongoDB using the default instructions on screen.
 * Download the latest version of [Petio](https://petio.tv/releases/latest) and decide which installation method you prefer
   * [NSSM](windows.md#nssm)
   * [Shawl](windows.md#shawl)
-* Once this is complete, you can navigate to `http://hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md). When you get to the MongoDB setup, instead of `mongo:27017` use `localhost:27017`.
+* Once this is complete, you can navigate to `http://<hostname>:7777/admin/` to start [configuring Petio](../configuration/first-time-setup.md). When you get to the MongoDB setup, instead of `mongo:27017` use `localhost:27017`.
 
 ### MongoDB Locally - On A Different Host
 
